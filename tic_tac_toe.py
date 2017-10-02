@@ -19,10 +19,6 @@ class Move:
         self.player = player
 
 
-def help():
-    print("Arguments you can use: move(row, col, player), undo(), redo(), draw_board(), help()")
-
-
 def move(row, col, player):
     if player == player_one:
         board[row - 1][col - 1] = player_one
@@ -38,7 +34,7 @@ def draw_board():
     os.system('clear')
     for row in board:
         for col in row:
-            if col == None:
+            if col is None:
                 print('[ ]', end='')
             else:
                 print(col, end='')

@@ -14,7 +14,8 @@ while True:
     list_of_groups.append(tutor_group)
     answer = input('Do you want to add any more groups? (yes/no)')
     if answer != 'yes':
-        print("You have successfully added {} group(s): {}".format(len(list_of_groups), list_of_groups))
+        print("You have successfully added {} group(s): {}".format(
+            len(list_of_groups), list_of_groups))
         break
     else:
         continue
